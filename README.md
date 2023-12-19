@@ -88,8 +88,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+Oefnenen met code, nog niet aan de eigen website gewerkt.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -102,8 +101,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
+Breakdown schetsen waren goedgekeurd, nu moeten ze nog uitgewerkt worden.
   - punt 1
   - punt 2
   - nog een punt
@@ -118,11 +116,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Voortgang 2 (week 3)
 
 <details>
-  <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
+  Accessability test, Gymshark is zeker niet accessible voor blinde mensen. De gebruiker moet continu door het menu heen met alle opties, op het moment dat de gebruiker eenmaal op de pagina terecht is gekomen met de items dan moet hij door iedere product slider heen. Ieder item heeft verschillende maten waar je doorheen moet, oftewel je moet 14x op tab klikken om door één item heen te komen. Daarnaast is de topbar met de studenten discount ook vrij vervelend aangezien de verteller al overspringt naar de volgende zin voordat hij de eerste zin heeft afgemaakt vanwege de transitie die te vinden is. Per pagina moet je door het menu heen en in het menu spelt hij de letters van de titels ipv het woord te benoemen.
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+Getest op accessability
 
   ### Agenda voor meeting
   samen met je groepje opstellen
