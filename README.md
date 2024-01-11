@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Robin Langhorst
+  Sanne 't Hooft (vervangen door jouw naam)
 
   #### Je startniveau:
-  Blauw
-  
+  hier je startniveau (kies uit zwart, rood óf blauw)
+
   #### Je focus:
-  Responsive
+  hier je focus (kies uit responsive óf surface plane)
  
 </details>
 
@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  Gymshark homepagina en PDP
+  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/gymshark-homepage.png" width="375px" alt="homepage van de pagina">
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/gymshark-pdp.png" width="375px" alt="product detail pagina">
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -88,7 +88,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-Oefnenen met code, nog niet aan de eigen website gewerkt.
+  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -101,7 +102,8 @@ Oefnenen met code, nog niet aan de eigen website gewerkt.
 
 
   ### Verslag van meeting
-Breakdown schetsen waren goedgekeurd, nu moeten ze nog uitgewerkt worden.
+  hier na afloop snel de uitkomsten van de meeting vastleggen
+
   - punt 1
   - punt 2
   - nog een punt
@@ -116,10 +118,11 @@ Breakdown schetsen waren goedgekeurd, nu moeten ze nog uitgewerkt worden.
 ## Voortgang 2 (week 3)
 
 <details>
-  Accessability test, Gymshark is zeker niet accessible voor blinde mensen. De gebruiker moet continu door het menu heen met alle opties, op het moment dat de gebruiker eenmaal op de pagina terecht is gekomen met de items dan moet hij door iedere product slider heen. Ieder item heeft verschillende maten waar je doorheen moet, oftewel je moet 14x op tab klikken om door één item heen te komen. Daarnaast is de topbar met de studenten discount ook vrij vervelend aangezien de verteller al overspringt naar de volgende zin voordat hij de eerste zin heeft afgemaakt vanwege de transitie die te vinden is. Per pagina moet je door het menu heen en in het menu spelt hij de letters van de titels ipv het woord te benoemen.
+  <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-Getest op accessability
+  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
