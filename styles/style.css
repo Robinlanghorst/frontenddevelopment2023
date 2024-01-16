@@ -2,8 +2,12 @@
 /* CSS REMEDY */
 /**************/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
-*, *::after, *::before {
-  box-sizing:border-box;  
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
 
@@ -16,8 +20,8 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text: #111;
+	--color-background: #eee;
 }
 
 
@@ -30,7 +34,9 @@
 
 /* jouw code */
 
-li, a, button {
+body li,
+body a,
+body button {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 700;
 	font-size: 1rem;
@@ -38,29 +44,60 @@ li, a, button {
 	text-decoration: none;
 }
 
-nav{
-	display:flex;
+body p {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 1rem;
+	color: black;
+	text-decoration: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+body h1,
+body h2 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 2rem;
+	color: black;
+	text-decoration: none;
+}
+
+body h3 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 1rem;
+	color: black;
+	text-decoration: none;
+}
+
+nav {
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 30px 10%;
 }
+
 .topbar {
 	display: flex;
-	background-color: beige;
+	background-color: rgb(241, 241, 236);
 	justify-content: end;
-	
-	
+
+
 }
+
 .topbar li {
-	
+
 	list-style: none;
 	text-decoration: none;
 	display: inline-block;
 	padding: 0px 10px;
 }
-.topbar a{
+
+.topbar a {
 	font-size: 0.6rem;
 }
+
 .logo {
 	cursor: pointer;
 }
@@ -69,109 +106,296 @@ nav{
 	list-style: none;
 }
 
-.nav_links li{
+.nav_links li {
 	display: inline-block;
 	padding: 0px 20px;
 }
 
-.nav_links li a{
-	transition:all 0.3s ease 0s;
+.nav_links li a {
+	transition: all 0.3s ease 0s;
 }
 
-.nav_links li a:hover{
+.nav_links li a:hover {
 	color: #BBBCBC;
 }
 
-button {
-	padding: 9px 25px;
-	background-color: rgba(0, 136, 169, 1);
-	border: none;
-	border-radius: 50px;
-	cursor: pointer;
-	transition: all 0.3s ease 0s;
-}
 
-button:hover {
-	background-color: rgba(0, 136, 169, 0.8);
-}
 
-.heroButtonWomen{
-	color:white;
-	padding: 9px 25px;
-	background-color: rgb(0, 0, 0);
-	border: none;
-	border-radius: 50px;
-	cursor: pointer;
-	transition: all 0.3s ease 0s;
-}
 
-.pslider{
-	display:flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: 50px 0px;
-}
+.hero-banner {
 
-.product-slider-heading{
-	font-size: 28px;
-	font-family: "Montserrat", sans-serif;
-	color:black;
-	text-align: center;
-	margin: 0px;
-}
+	background-image: url('../images/Hero.png');
+	
 
-.product-box{
-	display: flex;
-	flex-direction: column;
-	width: 300px;
-	padding: 15px;
-	border: 1px solid rgb(228, 228, 228);
-	border-radius: 10px;
-	margin: 0px 20px;
-}
+	background-size: cover;
 
-.p-img-container {
-	width:100%;
-	height: 100%;
-	display: flex;
-	overflow: hidden;
-}
+	background-position: center;
 
-.p-img a,
-.p-img{
 	width: 100%;
-	height: 100%;
+
 	display: flex;
+
+	justify-content: center;
+
+	align-items: center;
+
+	height: 60vh;
+	/* Hoe groot de banner is */
+
+}
+
+.hero-banner2 {
+
+	background-image: url('../images/Banner\ 2.webp');
+	
+
+	background-size: cover;
+
+	background-position: center;
+
+	width: 100%;
+
+	display: flex;
+
+	justify-content: center;
+
+	align-items: center;
+
+	height: 60vh;
+	/* Hoe groot de banner is */
+
+}
+
+.content {
+
+	text-align: center;
+
 	
 
 }
 
-.p-img a img{
+
+
+.button-list {
+
+	list-style: none;
+
+	padding: 0;
+
+	display: flex;
+
+	justify-content: center;
+
+	gap: 20px;
+	/* Ruimte tussen de buttons */
+
+}
+
+
+
+.button-list li {
+
+	display: inline;
+
+}
+
+
+
+.button {
+
+	background-color: black;
+
+	color: white;
+
+	text-decoration: none;
+
+	padding: 10px 20px;
+
+	border-radius: 15px;
+	/* Rondingen */
+
+	border: none;
+
+	cursor: pointer;
+
+	transition: background-color 0.3s ease;
+
+}
+
+
+
+.button:hover {
+
+	background-color: grey;
+	/* veranderd de kleur als je hovert */
+
+}
+
+.product-slider h2 {
+	font-size: 2rem;
+	display: inline-block;
+	margin-right: 1rem;
+}
+
+.view-all {
+	text-decoration: none;
+	font-size: 1rem;
+	display: inline-block;
+	margin-bottom: 1rem;
+	border-bottom: 1px solid currentColor;
+	/* onderlijn effect */
+}
+
+.carousel-container {
+	position: relative;
+	margin-top: 1rem;
+}
+
+
+
+.carousel {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	/* Keep 5 columns for your 5 items */
+	gap: 0.2rem;
+	margin: 0.1rem;
+	padding-bottom: 2rem;
+	overflow-x: hidden;
+	/* Hide the overflow */
+	width: calc((100% - 1.2rem) - 20%);
+	/* Adjust this value as needed */
+}
+
+.product {
+	position: relative;
+	overflow: hidden;
+	/* Zorgt ervoor dat de wishlist button niet overflowt (internet gevonden) */
+}
+
+.product img {
 	width: 100%;
-	height: 100%;
-	object-position: center;
-	object-fit: contain;
+	display: block;
+	
 }
 
-.p-img-back{
-	display:none;
+.product .product-image-hover {
+    display: none; /* Verbergt de hover afbeelding */
 }
 
-.p-img-container:hover .p-img-back{
+.product:hover .product-image {
+    display: none; /* Verbergt de default afbeelding als je hovert */
+}
+
+.product:hover .product-image-hover {
+    display: block; /* Laat de hover afbeelding zien */
+}
+
+.wishlist-button {
+	position: absolute;
+	top: 30px;
+	right: 50px;
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 50%;
+	padding: 0.8rem;
+	cursor: pointer;
+	display: none;
+	transition: background-color 0.3s ease;
+	border: none;
+}
+
+.product:hover .wishlist-button {
 	display: block;
 }
 
-.p-img-container:hover .p-img-front{
-	display: none;
+.product-information {
+	font-family: "Roboto", sans-serif;
+	font-size: 0.9rem;
+	padding-left: 2rem;
+	padding-bottom: 0.2rem;
+	margin: 0;
+	color: #333;
 }
 
-main section figure img{
-	width: 100%;
+.product-price {
+	font-size: 0.8rem;
+	padding-left: 2rem;
+	margin: 0;
+	color: #202020;
 }
 
-main section figure figcaption {
-	position:absolute;
-	top: 35rem;
-	left: 15rem;
+/* Opacity lager voor laatste item */
+.product:nth-last-child(1) {
+	opacity: 0.5;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+    padding: 0 20px;
+}
+
+.footer-column:last-child {
+    margin-right: 0;
+}
+
+footer .footer-column h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+footer .footer-list {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-list li {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+footer .footer-list a {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+footer .footer-list a:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+
+	.hero-banner {
+
+		height: auto;
+
+		padding: 20px;
+
+	}
+
+	.carousel {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.product:nth-last-child(1) {
+		display: none;
+		/* Hide the last product on smaller screens */
+	}
+
+	.button-list {
+
+		flex-direction: column;
+
+	}
+
 }
