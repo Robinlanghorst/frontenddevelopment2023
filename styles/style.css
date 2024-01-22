@@ -34,6 +34,10 @@
 
 /* jouw code */
 
+body{
+	margin:0;
+}
+
 body li,
 body a,
 body button {
@@ -174,7 +178,11 @@ nav {
 
 }
 
-
+figure {
+	display: block;
+    margin: 0;
+	position: relative;
+}
 
 .button-list {
 
@@ -234,7 +242,7 @@ nav {
 .product-slider h2 {
 	font-size: 2rem;
 	display: inline-block;
-	margin-right: 1rem;
+	margin-right: 0.5rem;
 }
 
 .view-all {
@@ -247,6 +255,7 @@ nav {
 }
 
 .carousel-container {
+	display:flex;
 	position: relative;
 	margin-top: 1rem;
 }
@@ -255,20 +264,23 @@ nav {
 
 .carousel {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	flex-wrap:nowrap;
+	grid-auto-flow: column;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	/* Keep 5 columns for your 5 items */
 	gap: 0.2rem;
 	margin: 0.1rem;
 	padding-bottom: 2rem;
-	overflow-x: hidden;
+	overflow-x: auto;
 	/* Hide the overflow */
-	width: calc((100% - 1.2rem) - 20%);
+	width: 100%;
 	/* Adjust this value as needed */
 }
 
 .product {
 	position: relative;
 	overflow: hidden;
+	width: 25vw;
 	/* Zorgt ervoor dat de wishlist button niet overflowt (internet gevonden) */
 }
 
@@ -345,7 +357,7 @@ footer {
     margin-right: 0;
 }
 
-footer .footer-column h4 {
+footer .footer-column h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 1.2rem;
     margin-bottom: 10px;
@@ -371,7 +383,41 @@ footer .footer-list a {
 footer .footer-list a:hover {
     text-decoration: underline;
 }
+span{
+	margin:0;
+	padding:0;
+}
+.size-menu {
+    position: absolute;
+    bottom: 0;
+	background-color: rgb(245, 245, 232);
+    width: 100%;
+    display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	padding: 0rem 2rem;
+	margin: 0rem;
+    justify-content:center;
+    visibility: hidden; /* verbergt het */
+}
 
+.product:hover .size-menu {
+    visibility: visible; /* laat zien als je hovert */
+}
+
+.size-button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 0.5rem;
+	margin: 0.2rem;
+    cursor: pointer;
+}
+
+.size-button:hover {
+    background-color: black;
+    color: white;
+}
 
 @media screen and (max-width: 768px) {
 
@@ -384,7 +430,7 @@ footer .footer-list a:hover {
 	}
 
 	.carousel {
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(5, 1fr);
 	}
 
 	.product:nth-last-child(1) {
