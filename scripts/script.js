@@ -24,6 +24,15 @@ document.querySelectorAll('.product').forEach(product => {
         sizeMenu.style.opacity = '0';
         // Line 10: gooit de opacity van het menu naar 0
 
-        
+        setTimeout(() => {
+            // Line 11-12: Dit reset kort alles terug naar normaal
+
+            sizeMenu.classList.remove('visible');
+            // Line 13: haalt de classlist visible weg en het artikel pakt de orginele stijling
+
+            sizeMenu.style.transition = '';
+            sizeMenu.style.opacity = '';
+            // Line 14-15: Dit reset de stijlveranderingen die eerder is gemaakt.
+        }, 50); // De pauze is maar 50 miliseconden voordat het terug reset
     });
 });
