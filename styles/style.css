@@ -3,30 +3,22 @@
 /**************/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 
 *,
 *::after,
 *::before {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
-
-
-
-
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text: #111;
-	--color-background: #eee;
+    /* startje */
+    --color-text: #111;
+    --color-background: #eee;
 }
-
-
-
-
 
 /****************/
 /* JOUW STYLING */
@@ -34,260 +26,240 @@
 
 /* jouw code */
 
-body{
-	margin:0;
+body {
+    margin: 0;
 }
 
 body li,
 body a,
 body button {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 700;
-	font-size: 1rem;
-	color: black;
-	text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
 }
 
 body p {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 500;
-	font-size: 1rem;
-	color: black;
-	text-decoration: none;
-	padding: 0px;
-	margin: 0px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
 }
 
 body h1,
 body h2 {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 700;
-	font-size: 2rem;
-	color: black;
-	text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
 }
 
 body h3 {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 700;
-	font-size: 1rem;
-	color: black;
-	text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
 }
 
-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 30px 10%;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Zorgt ervoor dat de header boven blijft Z index zal niet groter worden dan dit */
 }
+
 
 .topbar {
-	display: flex;
-	background-color: rgb(241, 241, 236);
-	justify-content: end;
+    display: flex;
+    background-color: rgb(241, 241, 236);
+    justify-content: end;
+    padding: 0 2rem;
+}
 
-
+ul {
+    padding-left: 0; /* Haalt te padding weg over de gehele body */
+    list-style-type: none; /* Haalt over alles de bulets weg */
 }
 
 .topbar li {
-
-	list-style: none;
-	text-decoration: none;
-	display: inline-block;
-	padding: 0px 10px;
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 0.625rem;
 }
 
 .topbar a {
-	font-size: 0.6rem;
+    font-size: 0.6rem;
 }
 
-.logo {
-	cursor: pointer;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+}
+
+nav p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding-top: 0.3rem;
 }
 
 .nav_links {
-	list-style: none;
+    list-style: none;
+    padding-left: 16rem;
 }
 
 .nav_links li {
-	display: inline-block;
-	padding: 0px 20px;
+    display: inline-block;
+    padding: 0 1.25rem;
 }
 
 .nav_links li a {
-	transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 
 .nav_links li a:hover {
-	color: #BBBCBC;
+    color: #BBBCBC;
 }
 
+.nav_icons {
+    display: flex; 
+    flex-direction: row; 
+   
+}
 
+.nav_icons li {
+    margin-right: 1rem; /* zorgt voor ruimte tussen de iconen */
+}
 
+.nav_icons li:nth-of-type(2) {
+    margin-right: 3rem; /* Geeft extra ruimte na de search for a product text */
+}
+
+.nav_icons img {
+    width: 1.5rem; 
+    height: 1.5rem; 
+}
+
+main {
+    margin-top: 7rem; /* Zorgt ervoor dat de content genoeg naar beneden wordt geduwd zodat het niet achter de navigatie valt */
+}
 
 .hero-banner {
-
-	background-image: url('../images/Hero.png');
-	
-
-	background-size: cover;
-
-	background-position: center;
-
-	width: 100%;
-
-	display: flex;
-
-	justify-content: center;
-
-	align-items: center;
-
-	height: 60vh;
-	/* Hoe groot de banner is */
-
+    background-image: url('../images/Hero.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /*Hoogte van de banner */
+    
 }
 
+
+
 .hero-banner2 {
-
-	background-image: url('../images/Banner\ 2.webp');
-	
-
-	background-size: cover;
-
-	background-position: center;
-
-	width: 100%;
-
-	display: flex;
-
-	justify-content: center;
-
-	align-items: center;
-
-	height: 60vh;
-	/* Hoe groot de banner is */
-
+    background-image: url('../images/Banner\ 2.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Hoe groot de banner is */
 }
 
 .content {
-
-	text-align: center;
-
-	
-
+    text-align: center;
 }
 
 figure {
-	display: block;
+    display: block;
     margin: 0;
-	position: relative;
+    position: relative;
 }
 
 .button-list {
-
-	list-style: none;
-
-	padding: 0;
-
-	display: flex;
-
-	justify-content: center;
-
-	gap: 20px;
-	/* Ruimte tussen de buttons */
-
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem; /* Ruimte tussen de buttons */
 }
-
-
 
 .button-list li {
-
-	display: inline;
-
+    display: inline;
 }
-
-
 
 .button {
-
-	background-color: black;
-
-	color: white;
-
-	text-decoration: none;
-
-	padding: 10px 20px;
-
-	border-radius: 15px;
-	/* Rondingen */
-
-	border: none;
-
-	cursor: pointer;
-
-	transition: background-color 0.3s ease;
-
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.9375rem; /* Rondingen */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-
-
 .button:hover {
-
-	background-color: grey;
-	/* veranderd de kleur als je hovert */
-
+    background-color: grey; /* veranderd de kleur als je hovert */
 }
 
 .product-slider h2 {
-	font-size: 2rem;
-	display: inline-block;
-	margin-right: 0.5rem;
+    font-size: 2rem;
+    display: inline-block;
+    margin-right: 0.3125rem;
+    margin-left: 2rem;
 }
 
 .view-all {
-	text-decoration: none;
-	font-size: 1rem;
-	display: inline-block;
-	margin-bottom: 1rem;
-	border-bottom: 1px solid currentColor;
-	/* onderlijn effect */
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid currentColor; /* onderlijn effect */
 }
 
 .carousel-container {
-	display:flex;
-	position: relative;
-	margin-top: 1rem;
+    display: flex;
+    position: relative;
+    margin-top: 1rem;
+    margin-left: 2rem;
 }
 
-
-
 .carousel {
-	display: grid;
-	flex-wrap:nowrap;
-	grid-auto-flow: column;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	/* Keep 5 columns for your 5 items */
-	gap: 0.2rem;
-	margin: 0.1rem;
-	padding-bottom: 2rem;
-	overflow-x: auto;
-	/* Hide the overflow */
-	width: 100%;
-	/* Adjust this value as needed */
+    display: grid;
+    flex-wrap: nowrap;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Zorgt ervoor dat het 5 Kolommen zijn */
+    gap: 0.4rem;
+    margin: 0.00625rem;
+    padding-bottom: 2rem;
+    overflow-x: auto; /* verbergt de overflow */
+    width: 100%; /* houdt de width op 100% */
 }
 
 .product {
-	position: relative;
-	overflow: hidden;
-	width: 25vw;
-	/* Zorgt ervoor dat de wishlist button niet overflowt (internet gevonden) */
+    position: relative;
+    overflow: hidden;
+    width: 25vw; /* Zorgt ervoor dat de wishlist button niet overflowt (internet gevonden) */
 }
 
 .product img {
-	width: 100%;
-	display: block;
-	
+    width: 100%;
+    display: block;
 }
 
 .product .product-image-hover {
@@ -303,114 +275,155 @@ figure {
 }
 
 .wishlist-button {
-	position: absolute;
-	top: 30px;
-	right: 50px;
-	background-color: rgba(255, 255, 255, 0.9);
-	border-radius: 50%;
-	padding: 0.8rem;
-	cursor: pointer;
-	display: none;
-	transition: background-color 0.3s ease;
-	border: none;
+    position: absolute; /* geeft de wishlist button een absolute waarde (misschien niet de optimale manier */
+    top: 1.875rem;
+    right: 3.125rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s ease;
+    border: none;
 }
 
 .product:hover .wishlist-button {
-	display: block;
+    display: block;
 }
 
 .product-information {
-	font-family: "Roboto", sans-serif;
-	font-size: 0.9rem;
-	padding-left: 2rem;
-	padding-bottom: 0.2rem;
-	margin: 0;
-	color: #333;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+    padding-bottom: 0.0125rem;
+    margin: 0;
+    color: #333;
 }
 
 .product-price {
-	font-size: 0.8rem;
-	padding-left: 2rem;
-	margin: 0;
-	color: #202020;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0;
+    color: #ff0000;
 }
 
-/* Opacity lager voor laatste item */
-.product:nth-last-child(1) {
-	opacity: 0.5;
-}
 
-footer {
+
+.content-columns {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 2rem 0 2rem 0;
+    margin-left: 1rem;
 }
 
-.footer-column {
+.content-columns .text-column {
     flex: 1;
-    margin-right: 20px;
-    padding: 0 20px;
+    margin-right: 1.25rem;
+    padding: 0 1.25rem;
 }
 
-.footer-column:last-child {
+.content-columns .text-column:last-child {
     margin-right: 0;
 }
 
-footer .footer-column h3 {
+.content-columns .text-column h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 1.2rem;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
-footer .footer-list {
+.content-columns .text-list {
     list-style: none;
     padding: 0;
 }
 
-footer .footer-list li {
+.content-columns .text-list li {
     font-size: 0.8rem;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
 }
 
-footer .footer-list a {
-	font-family: "Roboto", sans-serif;
-	font-weight: 400;
+.content-columns .text-list a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
     text-decoration: none;
     color: black;
 }
 
-footer .footer-list a:hover {
+.content-columns .text-list a:hover {
     text-decoration: underline;
 }
-span{
-	margin:0;
-	padding:0;
+
+.TekstBovenFooter {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    padding-top: 1rem; /* Dit geeft spacing voor de grijze lijn */
 }
+
+.TekstBovenFooter::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 2rem; /* begint na 2 rem zodat de gehele grid klopt */
+    right: 2rem; /* eindigt met 2 rem zodat de grid klopt */
+    height: 1px; /* Hoe dik de lijn is */
+    background-color: #b6b6b6; /* kleur lijn */
+}
+
+.TekstBovenFooter h2 {
+    font-size: 1.2rem;
+}
+
+.TekstBovenFooter p,
+.TekstBovenFooter h2 {
+    margin-left: 2rem;
+    margin-bottom: 1rem; /* Veranderd de witruimte */
+}
+
+.TekstBovenFooter p:last-child {
+    margin-bottom: 4rem; /* Geeft meer witruimte onder aan de sectie */
+}
+
+.TekstBovenFooter > :first-child {
+    padding-top: 1rem; /* Veranderd de witruimte boven het eerste element in de TekstBovenFooter sectie */
+}
+
+
+span {
+    
+    margin: 0;
+    padding: 0;
+}
+
 .size-menu {
     position: absolute;
     bottom: 0;
-	background-color: rgb(245, 245, 232);
+    background-color: rgb(233, 233, 233);
     width: 100%;
     display: flex;
-	flex-wrap: wrap;
-	gap: 1rem;
-	padding: 0rem 2rem;
-	margin: 0rem;
-    justify-content:center;
-    visibility: hidden; /* verbergt het */
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+    margin: 0;
+    justify-content: center;
+    opacity: 0; /* Geef de opacity 0 zodat het transparant is */
+    transition: opacity 0s /* geen effect nog oproepen internet gevonden */
 }
 
-.product:hover .size-menu {
-    visibility: visible; /* laat zien als je hovert */
+.size-menu.visible {
+    opacity: 1; /* Nu wordt het weergegeven */
+    transition: opacity 0.5s ease-in; /* Fade in met een ease in effect */
 }
+
 
 .size-button {
+    font-family: "Roboto" , sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
     background-color: white;
     color: black;
     border: 1px solid black;
-    padding: 0.5rem;
-	margin: 0.2rem;
+    padding: 0.3125rem;
+    margin: 0.0125rem;
     cursor: pointer;
 }
 
@@ -419,29 +432,308 @@ span{
     color: white;
 }
 
+.site-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* footer bestaat uit twee kolommen */
+    grid-template-rows: repeat(3, auto); /* en drie rijen */
+    gap: 1.25rem;
+    padding: 1.25rem;
+    background: var(--color-background);
+}
+
+.footer-grid {
+    display: contents; /* dit haalt de container zodat het klopt, was een troubleshooting oplossing en het werkte dus ik hield het maar zo */
+}
+
+.footer-top-left,
+.footer-top-right,
+.footer-middle-left,
+.footer-middle-right,
+.footer-bottom-left,
+.footer-bottom-right {
+    padding: 0.625rem;
+}
+
+.footer-top-left {
+    display: flex;
+    justify-content: flex-start;
+	gap: 3rem;
+}
+
+.footer-top-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 25rem;
+}
+
+.top-right-figures {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+.footer-middle-left {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.8rem;
+}
+
+.footer-middle-right {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.8rem;
+}
+
+.footer-bottom-left {
+	display:flex;
+    padding-top: 1.6rem;
+	justify-content:flex-start;
+}
+
+.footer-bottom-right {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.footer-bottom-right figure{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-column:not(:last-child) {
+    margin-right: 1.25rem;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+	gap:0.5rem;
+}
+
+.footer-list {
+    display: flex;
+    gap: 0.8rem;
+    list-style: none;
+}
+
+.footer-list a {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: none;
+	margin-bottom: 0.5rem;
+}
+
+
+.footer-bottom-left p {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.footer-column a {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #53565a;
+}
+
+.image-link {
+    display: block;
+    text-align: left;
+    
+  }
+  
+  .image-link img {
+    display: block; 
+    margin-bottom: 0; /* Haalt de spacing weg onder more about gymshark tussen de afbeelding en de tekst */
+  }
+  
+  .image-link figcaption {
+    font-size: 0.8rem;
+    
+    background-color: #e7e7e7; /* Background color for the text */
+    padding: 0.3125rem 0.625rem; /* Padding around the text, converted to rem */
+    padding-left: 1rem;
+    
+  }
+  
+
+h3 {
+    margin-top: 0;
+}
+
+button {
+    margin-bottom: 0.625rem; /* Spacing tussen de knoppen */
+}
+
+footer img {
+    width: auto;
+    height: 1.875rem; /* Fixed hoogte voor de images in de footer */
+    margin-bottom: 0.625rem; /* ruimte tussen de afbeeldingen */
+}
+
+
+/* Productpagina styling */
+
+.images_information {
+    display: flex;
+    flex-wrap: row;
+    padding: 2rem 20rem;
+    
+}
+
+.images {
+    flex: 2; /* Pakt 2/3rde van de containers breedte */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Ruimte tussen de afbeeldingen */
+}
+
+.information {
+    flex: 1; /* Pakt 1/3rde van de container */
+}
+
+
+
+.images img:nth-child(1),
+.images img:nth-child(2),
+.images img:nth-child(3) {
+    flex: 1; 
+    max-width: calc(33.33% - 10px); /* Iedere afbeelding in de eerste rij is een derde van de gehele breedte van de images container */
+}
+
+.images img:nth-child(4) {
+    flex: 1 0 100%; /* pakt de gehele breedte van de tweede rij */
+    max-width: calc(100% - 10px); /* bereken de maximale breedte + de gap  */
+}
+
+
+.images img:nth-child(5),
+.images img:nth-child(6) {
+    flex: 1 0 50%; /* Iedere afbeelding pakt hier 50% van de breedte in de rij */
+    max-width: calc(50% - 10px); /* Hier weer de berekening */
+}
+
+
+.information{
+    display: flex;
+    flex-direction: column;
+    padding-left:5rem;
+    max-width: 35rem; /* geeft een maximale breedte van de container */
+    padding-right: 5rem;
+}
+
+.information ul {
+    display: flex;
+    align-items: flex-start; /* zet de items horizontaal neer */
+    gap: 0.2rem; /* De gap tussen de items */
+    padding: 0; /* Haalt de standaard padding weg */
+    margin: 0; /* Haalt de standaard margin weg */
+  }
+  
+  .information ul li {
+    font-size: 0.8rem;
+    font-weight: 400; /* Font weight van de standaard text 4.1 en (3641) */
+  }
+  
+  .information ul li img{
+    width: 0.8rem; /* sterren size   */
+    height: 0.8rem; /* sterren size  */
+    
+  }
+
+  .information ul li:last-child {
+    font-weight: 600; /* Geeft de 3641 een dikkere font zoals op de echte site */
+  }
+  
+  /* Na de 5 sterren moet er een grotere gap zijn */
+  .information ul li:nth-child(5):not(.Colours_pants li),
+  .information ul li:nth-child(6):not(.Colours_pants li) {
+    margin-right: 1.2rem; /* de :not COlours pants li is omdat de ul li img items anders ook een grotere gap krijgen. Wist niet hoe ik anders kon oplossen */
+  }
+  
+
+
+
+/* image size verschillende kleuren" */
+.Colours_pants .colours-image {
+    width: 4.5rem; /* Dit geeft de breedte van de .Colour_pants */
+    height: 5rem; /* Dit geeft de hoogte van de images in .Colours_pants */
+}
+
+
+.button-product-list {
+    display: flex;
+    flex-direction: column; /* Dit zet de buttons in een column */
+    align-items: flex-start; /* Center align the buttons */
+    gap: 1.25rem; /* Space between the buttons */
+    margin-top: 4rem;
+    
+}
+
+.button-product-list .button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.9375rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white; 
+    background-color: rgb(101, 158, 179); 
+    width: 15rem;
+    
+}
+
+/* De hover voor de eerste button die blauw moet worden */
+.button-product-list .button:first-child:hover {
+    background-color: blue;
+}
+
+/* De tweede button moet grey worden in de button-product lijst. Alleen dit werkt niet.... */
+.button-product-list .button:nth-child(2) {
+    background-color: grey;
+}
+
+.button-product-list .button:nth-child(2):hover {
+    background-color: darkgrey;
+}
+
+
+
+
 @media screen and (max-width: 768px) {
+    .hero-banner {
+        height: auto;
+        padding: 1.25rem;
+    }
 
-	.hero-banner {
+    .carousel {
+        grid-template-columns: repeat(5, 1fr);
+    }
 
-		height: auto;
+    .product:nth-last-child(1) {
+        display: none; /* verbergt het laatste item op smalle schermen */
+    }
 
-		padding: 20px;
+    .button-list {
+        flex-direction: column;
+    }
 
-	}
+    .site-footer {
+        grid-template-columns: 1fr; /* gooit alle grid items in een column */
+    }
 
-	.carousel {
-		grid-template-columns: repeat(5, 1fr);
-	}
+    .footer-top-left,
+    .footer-top-right,
+    .footer-middle-left,
+    .footer-middle-right,
+    .footer-bottom-left,
+    .footer-bottom-right {
+        text-align: center; /* centreerd alles */
+        padding: 0.625rem;
+    }
 
-	.product:nth-last-child(1) {
-		display: none;
-		/* Hide the last product on smaller screens */
-	}
-
-	.button-list {
-
-		flex-direction: column;
-
-	}
-
+    
 }
